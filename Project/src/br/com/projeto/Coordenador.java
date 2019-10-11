@@ -1,10 +1,10 @@
 package br.com.projeto;
 /**
- * @author Mateus Pereira, Alex Simões e Kaique Moreira.
+ * @author Mateus Pereira, Alex Simï¿½es e Kaique Moreira.
  */
 public class Coordenador extends Pessoa {
 	private String setor;
-	private String formação;
+	private String formacao;
 	
 	public void setSetor(String setor) {
 		if(setor.length() <= 1 || setor.length() >= 12) {
@@ -14,11 +14,11 @@ public class Coordenador extends Pessoa {
 		}
 	}
 	
-	public void setFormação(String formação) {
-		if(formação.length() <= 19 || formação.length() >= 50) {
-			throw new IllegalArgumentException("Esta formação não existe. Tente Novamente.");
+	public void setFormacao(String formacao) {
+		if(formacao.length() <= 19 || formacao.length() >= 50) {
+			throw new IllegalArgumentException("Esta formacao nï¿½o existe. Tente Novamente.");
 		}else {
-			this.formação = formação;
+			this.formacao = formacao;
 		}	
 	}
 	
@@ -26,7 +26,7 @@ public class Coordenador extends Pessoa {
 		return this.setor;
 	}
 	
-	public String getFormação () {
-		return this.formação;
+	public String getFormacao () {
+		return this.formacao;
 	}
 }

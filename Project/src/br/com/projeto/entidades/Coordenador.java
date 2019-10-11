@@ -5,7 +5,7 @@ import br.com.projeto.enums.Cargo;
 
 /**
  * 
- * Esta classe representa um coordenador que é um Professor e um Funcionario
+ * Esta classe representa um coordenador que ï¿½ um Professor e um Funcionario
  * 
  * @author 
  *
@@ -15,9 +15,9 @@ public class Coordenador extends Professor {
 	private String setor;
 
 	public Coordenador(String nome, int idade, char sexo, String email,
-			long telefone, String formação, String curso, String setor, 
+			long telefone, String formacao, String curso, String setor, 
 			char turno, Cargo cargo) {
-		super(nome, idade, sexo, email, telefone, formação, turno, cargo, curso);
+		super(nome, idade, sexo, email, telefone, formacao, turno, cargo, curso);
 		this.setor = setor;
 	}
 

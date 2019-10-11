@@ -21,14 +21,14 @@ public class Teste {
 	public static void main(String[] args) throws IOException {
 		scan = new Scanner(System.in);
 
-		RepositorioAluno repositorioaluno = RepositorioAlunoImpl.gerarInstacia();
+		RepositorioAluno repositorioAluno = RepositorioAlunoImpl.gerarInstacia();
 		RepositorioFuncionarios ropositorioFuncionario = RepositorioFuncionariosImpl.gerarInstcia();
 		RepositorioGrupoPesquisa repositorioGrupoPesquisa = RepositorioGrupoPesquisaImpl.gerarInstacia(); 
 		
 		// reporsitorio curoso
 		// reporsitorio projeto
 		// repositorio grupo pesquisa
-		// Coé
+		// Coï¿½
 
 		int opcoesSistema = 0;
 		do {
@@ -69,7 +69,7 @@ public class Teste {
 	public static void menuFuncioanrios(RepositorioFuncionarios ropositorioFuncionario) throws IOException {
 		int opcoesFuncionario = 0;
 
-		System.out.println("Escolha sua opção para Funcionario:");
+		System.out.println("Escolha sua opï¿½ï¿½o para Funcionario:");
 		System.out.println("1 - Incluir");
 		System.out.println("20 - Voltar");
 		System.out.println("10 - sair");
@@ -80,7 +80,7 @@ public class Teste {
 		case 1:
 
 			System.out.println("========================================");
-			System.out.println("   Informações para o  Cadastramento");
+			System.out.println("   Informaï¿½ï¿½es para o  Cadastramento");
 			System.out.println("========================================");
 
 			System.out.println("Nome: ");
@@ -98,8 +98,8 @@ public class Teste {
 			System.out.println("Telefone: ");
 			long telefone = scan.nextLong();
 
-			System.out.println("Formação: ");
-			String formação = scan.next();
+			System.out.println("Formaï¿½ï¿½o: ");
+			String formacao = scan.next();
 
 			System.out.println("Curso: ");
 			String curso = scan.next();
@@ -107,7 +107,7 @@ public class Teste {
 			System.out.println("Turno: ");
 			char turno = (char) System.in.read();
 
-			Professor prof = new Professor(nome, idade, sexo, email, telefone, formação, turno, Cargo.PROFESSOR, curso);
+			Professor prof = new Professor(nome, idade, sexo, email, telefone, formacao, turno, Cargo.PROFESSOR, curso);
 
 			ropositorioFuncionario.cadastrarFuncionario(prof);
 
@@ -130,7 +130,7 @@ public class Teste {
 	public static void menuGrupoPesquisa(RepositorioGrupoPesquisa repositorioGrupos, RepositorioFuncionarios ropositorioFuncionario) throws IOException {
 		int opcoesFuncionario = 0;
 
-		System.out.println("Escolha sua opção para GrupoPesquisa:");
+		System.out.println("Escolha sua opï¿½ï¿½o para GrupoPesquisa:");
 		System.out.println("1 - Incluir");
 		System.out.println("20 - Voltar");
 		System.out.println("10 - sair");
@@ -141,10 +141,10 @@ public class Teste {
 		case 1:
 
 			System.out.println("========================================");
-			System.out.println("   Informações para o  Cadastramento");
+			System.out.println("   Informaï¿½ï¿½es para o  Cadastramento");
 			System.out.println("========================================");
 
-			System.out.println("Identificação Gurpo de Pesquisa: ");
+			System.out.println("Identificaï¿½ï¿½o Gurpo de Pesquisa: ");
 			String nomeGrupo = scan.next();
 		
 			System.out.println("Professor Responsavel: ");

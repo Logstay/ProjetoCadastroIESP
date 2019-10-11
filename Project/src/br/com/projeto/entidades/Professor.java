@@ -5,30 +5,30 @@ import br.com.projeto.enums.Cargo;
 
 /**
  * 
- * Esta é a classe que reprensata professor e ele é um funcionario.
+ * Esta ï¿½ a classe que reprensata professor e ele ï¿½ um funcionario.
  * 
  * @author 
  *
  */
 public class Professor extends Funcionario {
 	
-	private String formação;
+	private String formacao;
 	private String curso;
 
 	public Professor(String nome, int idade, char sexo, String email,
-					  long telefone, String formação, char turno, Cargo cargo, String curso) {
+					  long telefone, String formacao, char turno, Cargo cargo, String curso) {
 		super(nome, email, telefone, idade, sexo, turno, cargo);
 		
-		this.formação = formação;
+		this.formacao = formacao;
 		this.curso = curso;
 	}
 
-	public String getFormação() {
-		return formação;
+	public String getFormacao() {
+		return formacao;
 	}
 
-	public void setFormação(String formação) {
-		this.formação = formação;
+	public void setFormacao(String formacao) {
+		this.formacao = formacao;
 	}
 
 	public String getCurso() {

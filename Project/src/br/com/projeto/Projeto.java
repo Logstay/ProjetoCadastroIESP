@@ -4,12 +4,12 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
- * @author Mateus Pereira, Alex Simões e Kaique Moreira.
+ * @author Mateus Pereira, Alex Simï¿½es e Kaique Moreira.
  */
 public class Projeto {
 	private static Scanner scan;
 	/**
-	 * Será bom criar uma classe departamento? para armazenar os funcionarios separadamente em cada setor especifico
+	 * Serï¿½ bom criar uma classe departamento? para armazenar os funcionarios separadamente em cada setor especifico
 	 */
 	public static void main(String[] args) {
 		
@@ -17,7 +17,7 @@ public class Projeto {
 		String nome;		char sexo;
 		String email;		char turno;
 		String cargo;		int idade;
-		String formação;	int resposta;
+		String formacao;	int resposta;
 		String curso;		long telefone;
 		int resp;
 									
@@ -49,7 +49,7 @@ public class Projeto {
 			case 1:
 				try {
 					System.out.println("========================================");
-					System.out.println("   Informações para o  Cadastramento");
+					System.out.println("   Informaï¿½ï¿½es para o  Cadastramento");
 					System.out.println("========================================");
 					
 					System.out.println("Nome: ");
@@ -67,13 +67,13 @@ public class Projeto {
 					System.out.println("Telefone: ");
 					telefone = scan.nextLong();
 					
-					System.out.println("Formação: ");
-					formação = scan.next();
+					System.out.println("Formaï¿½ï¿½o: ");
+					formacao = scan.next();
 					
 					System.out.println("Curso: ");
 					curso = scan.next();
 					
-					Professor prof = new Professor(nome, idade, sexo, email, telefone, formação, curso);
+					Professor prof = new Professor(nome, idade, sexo, email, telefone, formacao, curso);
 					prof.cadastrarProfessor(prof);
 					System.out.println(prof);
 					
@@ -85,7 +85,7 @@ public class Projeto {
 			case 2:
 				try {
 					System.out.println("========================================");
-					System.out.println("   Informações para o  Cadastramento");
+					System.out.println("   Informaï¿½ï¿½es para o  Cadastramento");
 					System.out.println("========================================");
 					
 					System.out.println("Nome: ");
@@ -119,7 +119,7 @@ public class Projeto {
 					System.out.println(ex.getMessage());
 				}
 			default:
-				System.out.println("Está opção não existe.");
+				System.out.println("Estï¿½ opï¿½ï¿½o nï¿½o existe.");
 				System.out.println("Finalizando sistema.......");
 			}
 		}		
